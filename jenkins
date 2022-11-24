@@ -1,0 +1,36 @@
+pipeline { 
+    agent any
+    stages {
+        stage('Git Cloning') 
+        {
+            steps 
+            {
+                git 'https://github.com/Prudhvi-Nath-Reddy/SE_Junkins.git'
+            }
+        }
+        stage('Square_build') 
+        {
+            steps 
+            {
+                sh "chmod u+x square.py"
+                sh "./square.py"
+            }
+        }
+        stage('Cube_build') 
+        {
+            steps 
+            {
+                sh "chmod u+x cube.py"
+                sh "./cube.py"
+            }
+        }
+        stage('Testing') 
+        {
+            steps 
+            {
+                sh "chmod u+x test.py"
+                sh "./test.py"
+            }
+        
+    } 
+}
