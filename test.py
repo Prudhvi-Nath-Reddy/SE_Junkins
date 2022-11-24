@@ -3,7 +3,7 @@ import unittest
 from square import square
 from cube import cube
 
-class test(unittest.TestCase):
+class test_code(unittest.TestCase):
 
     def sq_test(self):
         n = 2
