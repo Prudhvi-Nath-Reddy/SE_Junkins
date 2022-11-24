@@ -8,12 +8,12 @@ class test_code(unittest.TestCase):
     def test_sq_test(self):
         n = 2
         result = square(n)
-        self.assertEqual(result, 5)
+        self.assertEqual(result, 4)
 
     def test_cube_test(self):
         n = 2
         result = cube(n)
-        self.assertEqual(result, 900)
+        self.assertEqual(result, 90)
 
 
 if __name__ == '__main__':
