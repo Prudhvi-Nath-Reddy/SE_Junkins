@@ -13,7 +13,7 @@ class test(unittest.TestCase):
     def cube_test(self):
         n = 2
         result = cube(n)
-        self.assertEqual(result, 8)
+        self.assertEqual(result, 900)
 
 
 if __name__ == '__main__':
