@@ -5,12 +5,12 @@ from cube import cube
 
 class test(unittest.TestCase):
 
-    def sq_test(self):
+    def test_sq(self):
         n = 2
         result = square(n)
         self.assertEqual(result, 40)
 
-    def cube_test(self):
+    def test_cube(self):
         n = 2
         result = cube(n)
         self.assertEqual(result, 8)
