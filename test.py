@@ -8,7 +8,7 @@ class test(unittest.TestCase):
     def sq_test(self):
         n = 2
         result = square(n)
-        self.assertEqual(result, 4)
+        self.assertEqual(result, 40)
 
     def cube_test(self):
         n = 2
